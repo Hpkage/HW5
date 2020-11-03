@@ -41,6 +41,10 @@ int main(int argc, char** argv) {
     o->callback((Fl_Callback*)Button_CB);
     } // Fl_Button* o
 
+    { Fl_Button* o = new Fl_Button(200, 110, 90, 30, "Quit");
+    o->callback((Fl_Callback*)Terminate);
+    } // Fl_Button* o
+
     o->end();
     } // Fl_Double_Window* o
 
