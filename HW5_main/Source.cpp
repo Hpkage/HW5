@@ -21,6 +21,10 @@ void Button_CB(Fl_Widget*, void* userdata) {
     test_output->value(str.c_str());
 }
 
+void Terminate(Fl_Widget*, void* userdata) {
+    exit(0);
+}
+
 int main(int argc, char** argv) {
 
     Fl_Double_Window* w;
