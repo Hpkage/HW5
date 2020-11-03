@@ -49,6 +49,9 @@ int main(int argc, char** argv) {
     const char* Fl_Input(const char* fmt, const char* defstr = 0);
     } // Fl_Input* test_input
 
+    { test_output = new Fl_Output(50, 80, 100, 30, "Result:");
+    }
+
     o->end();
     } // Fl_Double_Window* o
 
