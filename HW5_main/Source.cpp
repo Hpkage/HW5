@@ -45,6 +45,10 @@ int main(int argc, char** argv) {
     o->callback((Fl_Callback*)Terminate);
     } // Fl_Button* o
 
+    { test_input = new Fl_Input(50, 50, 100, 30, "Input:");
+    const char* Fl_Input(const char* fmt, const char* defstr = 0);
+    } // Fl_Input* test_input
+
     o->end();
     } // Fl_Double_Window* o
 
