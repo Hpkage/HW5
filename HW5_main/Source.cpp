@@ -37,6 +37,10 @@ int main(int argc, char** argv) {
     { Fl_Box* w = new Fl_Box(55, 20, 10, 10, "Type in a word");
     } // Fl_Box* w
 
+    { Fl_Button* o = new Fl_Button(155, 50, 90, 30, "Trunc It!");
+    o->callback((Fl_Callback*)Button_CB);
+    } // Fl_Button* o
+
     o->end();
     } // Fl_Double_Window* o
 
