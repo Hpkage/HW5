@@ -12,6 +12,15 @@
 Fl_Input* test_input = (Fl_Input*)0;
 Fl_Output* test_output = (Fl_Output*)0;
 
+void Button_CB(Fl_Widget*, void* userdata) {
+    char help[100];
+    std::string str;
+    strcpy_s(help, test_input->value());
+    str = help;
+    str = trunc8(str).str;
+    test_output->value(str.c_str());
+}
+
 int main(int argc, char** argv) {
 
     Fl_Double_Window* w;
