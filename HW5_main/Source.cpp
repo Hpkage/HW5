@@ -26,11 +26,16 @@ void Terminate(Fl_Widget*, void* userdata) {
 }
 
 int main(int argc, char** argv) {
+    StringInfo act;
+    std::string str;
 
     Fl_Double_Window* w;
 
     { Fl_Double_Window* o = new Fl_Double_Window(300, 150);
     w = o; if (w) {/* empty */ }
+
+    { Fl_Box* w = new Fl_Box(55, 20, 10, 10, "Type in a word");
+    } // Fl_Box* w
 
     o->end();
     } // Fl_Double_Window* o
